@@ -13,6 +13,12 @@ set wrap "Wrap lines
 set lbr
 set tw=80
 
+" Save 500 commands
+set history=500
+
+" show partial commands in the status bar
+set showcmd
+
 " turn on syntax highlighting
 syntax enable
 
@@ -33,7 +39,6 @@ set ruler
 
 " Height of the command bar
 set cmdheight=2
-
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
@@ -64,7 +69,6 @@ set mat=2
 
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
 
 """"""""""""""""""""""""""""""
 " => Status line
