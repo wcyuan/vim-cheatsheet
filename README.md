@@ -117,6 +117,7 @@ Similarly, the "global" command executes a command on every matching line:
 | control-v | select a rectangle |
 
 While a rectangle is selected:
+
 | command | description |
 | ------- | ----------- |
 | I<text><Esc> | add <text> to each line (to the left of the visual block}.  Note that while typing the text, it will only appear on the first line, but after <Esc>, it will appear on all lines.  Short lines which aren't touched by the rectangle will be unaffected. |
