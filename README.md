@@ -45,5 +45,6 @@
 | set expandtab tabstop=4 shiftwidth=4 | set tab size |
 | gg=G | reindent the file |
 | :so ~/.vimrc | reload .vimrc file |
+| :set incsearch hlsearch | turn on incremental search and highlight search |
 
 
