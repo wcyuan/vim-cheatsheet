@@ -8,6 +8,10 @@ http://vimdoc.sourceforge.net/
 | control-b | page up |
 | control-u | half page down |
 | control-d | half page up |
+| e, w, E, W | forward by a word |
+| b, B | backwards by a word |
+| f<char>, t<char> | search forward to the next occurrence of char on this line |
+| F<char>, T<char> | search backwards to the previous occurrence of char on this line |
 | # | go to previous occurrence of the string under the cursor |
 | * | go to next occurrence of the string under the cursor |
 | ( ) | backward / forward by sentence |
@@ -26,7 +30,7 @@ http://vimdoc.sourceforge.net/
 | m" | jump to position when last editing the file |
 | m[ | start of last change |
 | m] | end of last change |
-| `< `>| go to the beginning or end of the visual area |
+| \`< \`>| go to the beginning or end of the visual area |
 <!-- ` -->
 
 ### Search
