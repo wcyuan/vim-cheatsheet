@@ -35,12 +35,15 @@
 ### Buffers
 | command | description |
 | ------- | ----------- |
+| :e <filename> | open file |
+| set wildmenu and wildmode=longest:list | better tab completion in commands |
 | :ls or :buffers | list buffers |
 | :bd | close buffer without quitting vim |
 | :bn | next buffer |
 | :bp | previous buffer |
 | :tabe | open file in a new tab |
-| :e <filename> | open file |
+| :tab split | add a new tab with this file |
+| gt | move between tabs |
 
 ### Splitting the window
 | command | description |
@@ -49,7 +52,10 @@
 | :vsp or :vsplit | split vertically |
 | control-w w | move to the other window |
 | control-w <arrow key or hjkl> | move to window in that direction |
-| control-w o | close other windows |
+| control-w o or :only | close other windows |
+| control-w + | increase window size |
+| control-w + | decrease window size |
+| control-w <HJKL> | move the window in that direction |
 
 
 ### Other
@@ -59,7 +65,8 @@
 | u | undo |
 | control-r | redo |
 | set expandtab tabstop=4 shiftwidth=4 | set tab size |
-| gg=G | reindent the file |
+| = | reindent |
+| gg=G | reindent the whole file |
 | :so ~/.vimrc | reload .vimrc file |
 | :set incsearch hlsearch | turn on incremental search and highlight search |
 | diw | delete the whole word your cursor is on |
@@ -67,9 +74,13 @@
 | p | put after cursor |
 | P | put before cursor |
 | xp | transpose letters (start on the first letter to switch) |
+| "[a-z]y | yank to register |
+| "[a-z]p | put from register |
 | "*yy | yank to clipboard |
 | "*p | paste from clipboard |
-| v | visual mode |
+| v | visual mode (select a region) |
+| V | visual mode working on lines |
+| control-v | select a rectangle |
 | . | repeat last edit |
 | r | replace one character |
 | R | replace mode -- like entering insert mode but with overwrite on, except backspace undoes a change instead of deletes |
@@ -81,5 +92,8 @@
 | C |  c$  (change to end of the line) |
 | s | cl  (change one character) |
 | S | cc  (change a whole line) |
+| set unmodifiable | read-only mode |
+| :saveas <filename> | save to a different file |
+
 
 
