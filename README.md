@@ -10,8 +10,8 @@ http://vimdoc.sourceforge.net/
 | control-d | half page up |
 | e, w, E, W | forward by a word |
 | b, B | backwards by a word |
-| f<char>, t<char> | search forward to the next occurrence of char on this line |
-| F<char>, T<char> | search backwards to the previous occurrence of char on this line |
+| f\<char\>, t\<char\> | search forward to the next occurrence of char on this line |
+| F\<char\>, T\<char\> | search backwards to the previous occurrence of char on this line |
 | # | go to previous occurrence of the string under the cursor |
 | * | go to next occurrence of the string under the cursor |
 | ( ) | backward / forward by sentence |
@@ -42,8 +42,8 @@ http://vimdoc.sourceforge.net/
 ### Buffers
 | command | description |
 | ------- | ----------- |
-| :e <filename> | open file |
-| :r <filename> | insert file |
+| :e \<filename\> | open file |
+| :r \<filename\> | insert file |
 | set wildmenu and wildmode=longest:list | better tab completion in commands |
 | :ls or :buffers | list buffers |
 | :bd | close buffer without quitting vim |
@@ -59,11 +59,11 @@ http://vimdoc.sourceforge.net/
 | :split | split horizontally |
 | :vsp or :vsplit | split vertically |
 | control-w w | move to the other window |
-| control-w <arrow key or hjkl> | move to window in that direction |
+| control-w \<arrow key or hjkl\> | move to window in that direction |
 | control-w o or :only | close other windows |
 | control-w + | increase window size |
 | control-w + | decrease window size |
-| control-w <HJKL> | move the window in that direction |
+| control-w \<HJKL\> | move the window in that direction |
 
 ### Registers and Macros
 | command | description |
@@ -120,15 +120,15 @@ While a rectangle is selected:
 
 | command | description |
 | ------- | ----------- |
-| I<text><Esc> | add <text> to each line (to the left of the visual block}.  Note that while typing the text, it will only appear on the first line, but after <Esc>, it will appear on all lines.  Short lines which aren't touched by the rectangle will be unaffected. |
+| I\<text\>\<Esc\> | add \<text\> to each line (to the left of the visual block}.  Note that while typing the text, it will only appear on the first line, but after \<Esc\>, it will appear on all lines.  Short lines which aren't touched by the rectangle will be unaffected. |
 | $ | When selecting a rectangle: extend the rectangle to the end of each line |
-| A<text><Esc> | add <text> to each line (to the right of the visual block}.  Short lines WILL be changed |
-| c<text><Esc> | Replace existing rectangle with the new text on each line.  Skip short lines. |
-| C<text><Esc> | Replace existing rectangle with each line extended to the end of the line with the new text on each line.  Skip short lines. |
+| A\<text\>\<Esc\> | add <text> to each line (to the right of the visual block}.  Short lines WILL be changed |
+| c\<text\>\<Esc\> | Replace existing rectangle with the new text on each line.  Skip short lines. |
+| C\<text\>\<Esc\> | Replace existing rectangle with each line extended to the end of the line with the new text on each line.  Skip short lines. |
 | U | make uppercase |
 | u | make lowercase |
 | ~ | swap case |
-| r<char> | replace with a single character (as many repetitions of that character as necessary) |
+| r\<char\> | replace with a single character (as many repetitions of that character as necessary) |
 | J | join lines |
 | > | replace with a single letter (as many repetitions of that letter as necessary) |
 | < | Decrease indent |
@@ -152,8 +152,8 @@ While a rectangle is selected:
 | P | put before cursor |
 | r | replace one character |
 | R | replace mode -- like entering insert mode but with overwrite on, except backspace undoes a change instead of deletes |
-| d<movement> | delete according to the movement command that follows |
-| c<movement> | just like delete, but leaves you in insert mode afterwards |
+| d\<movement\> | delete according to the movement command that follows |
+| c\<movement\> | just like delete, but leaves you in insert mode afterwards |
 | x | delete letter, same as dl |
 | X | delete letter to the left of the cursor, same as dh |
 | D | delete to the end of the line, like d$ |
@@ -161,7 +161,7 @@ While a rectangle is selected:
 | s | cl  (change one character) |
 | S | cc  (change a whole line) |
 | set unmodifiable | read-only mode |
-| :saveas <filename> | save to a different file |
+| :saveas \<filename\> | save to a different file |
 | gUw | uppercase next word |
 | guw | lowercase next word |
 
