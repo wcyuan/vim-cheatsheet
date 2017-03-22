@@ -80,6 +80,7 @@ http://vimdoc.sourceforge.net/
 | @[a-z] | playback macro |
 | @@ | playback last played macro |
 | q[A-Z] | start appending to macro |
+| :reg | list all registers |
 
 Recording a macro to a register is exactly the same as copying text to that register where the text are vim commands.  So another way to record a macro is simply to type out the commands, then copy them to a register.  Or, if you want to edit a macro, you can paste the register to see the commands, make changes, then copy the commands again.  
 
